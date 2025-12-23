@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rongroom购物商城 - 首页</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <!-- 头部导航 -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="商城logo">
+    </div>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="index.html" class="active">首页</a></li>
+      <li class="nav-item"><a href="#">2班</a></li>
+      <li class="nav-item"><a href="#">容涛</a></li>
+      <li class="nav-item"><a href="#">25216950210</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="user-info hide"></span>
+      <a href="login.html" class="login-btn">登录/注册</a>
+      <a href="javascript:;" class="logout-btn hide">退出</a>
+      <a href="cart.html" class="cart">
+        购物车
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- 搜索栏 -->
+  <section class="search-section">
+    <div class="container">
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="请输入商品名称搜索...">
+        <button class="btn btn-primary" id="search-btn">搜索</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 轮播图 -->
+  <section class="banner-section">
+    <div class="container banner-container">
+      <div class="banner-wrapper">
+        <ul class="banner-list">
+          <li class="banner-item active"><img src="images/banner_1.png" alt="轮播图1"></li>
+          <li class="banner-item"><img src="images/banner1.png" alt="轮播图2"></li>
+          <li class="banner-item"><img src="images/banner3.png" alt="轮播图3"></li>
+        </ul>
+        <!-- 轮播按钮 -->
+        <button class="banner-btn prev-btn">&lt;</button>
+        <button class="banner-btn next-btn">&gt;</button>
+        <!-- 指示器 -->
+        <div class="banner-indicator">
+          <span class="indicator-item active"></span>
+          <span class="indicator-item"></span>
+          <span class="indicator-item"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 商品分类 -->
+  <!-- 商品分类 -->
+<section class="category-section">
+  <div class="container">
+    <h2 class="section-title">商品分类</h2>
+    <div class="category-nav">
+      <!-- 新增“全部”分类，默认加active样式 -->
+      <a href="javascript:;" class="category-item active" data-category="all">全部</a>
+      <a href="javascript:;" class="category-item" data-category="时尚服装">时尚服装</a>
+      <a href="javascript:;" class="category-item" data-category="数码电子">数码电子</a>
+      <a href="javascript:;" class="category-item" data-category="休闲食品">休闲食品</a>
+      <a href="javascript:;" class="category-item" data-category="家居用品">家居用品</a>
+    </div>
+  </div>
+</section>
+
+  <!-- 推荐商品：添加section和container包裹（核心修改） -->
+  <section class="product-section">
+    <div class="container">
+      <h2 class="section-title">热门推荐</h2>
+      <!-- 新增：搜索无结果提示 -->
+      <div class="no-result hide">未找到匹配的商品，请更换关键词试试~</div>
+      <!-- 热门推荐商品（添加data-category属性） -->
+      <div class="product-list">
+        <!-- 商品1：对应“数码电子” -->
+        <div class="product-item" data-category="数码电子">
+          <a href="product-detail.html">
+            <img src="images/笔记本.jpg" alt="商品1">
+            <h3 class="product-name">新款笔记本 5090x显卡</h3>
+            <p class="product-price">¥ 15999.00</p>
+          </a>
+        </div>
+        <!-- 商品2：对应“时尚服装” -->
+        <div class="product-item" data-category="时尚服装">
+          <a href="product-detail2.html">
+            <img src="images/T恤.avif" alt="商品2">
+            <h3 class="product-name">纯棉短袖T恤 夏季宽松百搭</h3>
+            <p class="product-price">¥ 59.00</p>
+          </a>
+        </div>
+        <!-- 商品3：对应“休闲食品” -->
+        <div class="product-item" data-category="休闲食品">
+          <a href="product-detail3.html">
+            <img src="images/蛋糕.png" alt="商品3">
+            <h3 class="product-name">蜂蜜奶油小蛋糕 100g</h3>
+            <p class="product-price">¥ 199.00</p>
+          </a>
+        </div>
+        <!-- 商品4：对应“家居用品” -->
+        <div class="product-item" data-category="家居用品">
+          <a href="product-detail4.html">
+            <img src="images/home4.png" alt="商品4">
+            <h3 class="product-name">金橡树泰国乳胶床垫</h3>
+            <p class="product-price">¥ 1189.00</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 底部 -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">关于我们</a>
+      <a href="#">联系方式</a>
+      <a href="#">隐私政策</a>
+      <a href="#">售后服务</a>
+    </div>
+    <p class="footer-copyright">©25216950210 容涛</p>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

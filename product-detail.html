@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品详情 - rongroom购物商城</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/product-detail.css">
+</head>
+<body>
+  <!-- 头部导航 -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="商城logo">
+    </div>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="index.html">首页</a></li>
+      <li class="nav-item"><a href="#">2班</a></li>
+      <li class="nav-item"><a href="#">容涛</a></li>
+      <li class="nav-item"><a href="#">25216950210</a></li>
+    </ul>
+    <div class="nav-right">
+      <span class="user-info hide"></span>
+      <a href="login.html" class="login-btn">登录/注册</a>
+      <a href="javascript:;" class="logout-btn hide">退出</a>
+      <a href="cart.html" class="cart">
+        购物车
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- 商品详情主体 -->
+  <section class="product-detail-section">
+    <div class="container">
+      <div class="product-detail-box">
+        <div class="product-img">
+          <img src="images/笔记本.jpg" alt="商品图片">
+        </div>
+        <div class="product-info">
+          <h2 class="product-title">联想拯救者Y9000P</h2>
+          <p class="product-price">¥ <span id="product-price">15999.00</span></p>
+          <p class="product-desc">
+            1. 全新设计，轻薄机身，高性能CPU，高速显卡<br>
+            2. 高性能游戏本轻薄本 18寸 U9/5090/32G/1T 300Hz<br>
+            3. 长410mm 宽320mm 厚30.5mm<br>
+            4. 屏幕分辨率 2560*1600<br>
+            5. 黑色
+          </p>
+          <div class="product-quantity">
+            <label for="quantity">购买数量：</label>
+            <button class="quantity-btn minus-btn">-</button>
+            <input type="number" id="quantity" value="1" min="1">
+            <button class="quantity-btn plus-btn">+</button>
+          </div>
+          <button class="btn btn-primary add-cart-btn" id="add-cart-btn">加入购物车</button>
+        </div>
+      </div>
+
+      <!-- 商品详情介绍 -->
+      <div class="product-desc-detail">
+        <h3 class="desc-title">商品详情</h3>
+        <div class="desc-content">
+          <p>1. 品牌 联想（Lenovo） 商品编号 10156356481526</p>
+          <p>2. 显卡型号 RTX5090 CPU性能释放 160W</p>
+          <p>3. 插槽数量 2个 内存类型 DDR5</p>
+          <p>4. 便利功能 数字小键盘</p>
+          <p>5. 扩展性 硬盘扩展 内存扩展</p>
+          <p>6. 机身材质 金属+复合材质 屏幕尺寸 16.0-16.9英寸</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 底部 -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">关于我们</a>
+      <a href="#">联系方式</a>
+      <a href="#">隐私政策</a>
+      <a href="#">售后服务</a>
+    </div>
+    <p class="footer-copyright">©25216950210 容涛</p>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/product-detail.js"></script>
+</body>
+</html>

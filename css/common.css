@@ -1,0 +1,134 @@
+/* 样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft Yahei", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 顶部导航栏 */
+.header {
+  height: 100px;
+  border-bottom: 2px solid #e53935;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 80px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-item a {
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #e53935;
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-right .cart {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #e53935;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+}
+
+/* 底部样式 */
+.footer {
+  margin-top: 50px;
+  height: 150px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-links a {
+  color: #fff;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* 隐藏元素通用类 */
+.hide {
+  display: none;
+}
+
+/* 按钮通用样式 */
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #e53935;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #c62828;
+}
+
+.btn-default {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.btn-default:hover {
+  background-color: #e0e0e0;
+}
